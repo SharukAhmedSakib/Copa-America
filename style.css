@@ -144,10 +144,37 @@ td, tr{
     box-shadow: 5px 0px 20px grey;
 }
 
+
 #ranking-section p{
     color: grey;
     font-size: 13px;
     font-style: italic;
+}
+
+/*------------------------*\
+    Videos section style 
+\*------------------------*/
+
+#videos-section{
+    padding: 5%;
+}
+
+
+.videos{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+}
+
+.video{
+    box-shadow: 5px 0px 20px grey;
+    padding: 2%;
+    margin: 2%;
+
+}
+
+.video:hover{
+    box-shadow: 5px 0px 20px black;
 }
 
 /*------------------------*\
