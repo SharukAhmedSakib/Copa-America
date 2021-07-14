@@ -7,19 +7,26 @@
 body{
     font-family: 'Poppins', sans-serif;
     margin: 0px;
+    overflow-x: hidden;
 }
 
 /*------------------------*\
      Header style 
 \*------------------------*/
 header{
-display: flex;
+display: grid;
+grid-template-columns: repeat(2, 1fr);
 background-color: #2D25A0;
 align-items: center;
 justify-content:space-between;
-padding: 150px;
+padding: 10%;
 
 }
+
+#header-content{
+    width: 50%;
+}
+
 
 #header-content h1{
     color: white;
@@ -55,7 +62,7 @@ padding: 150px;
 }
 
 header img{
-    width: 556px;
+    width: 100%;
 }
 
 /*------------------------*\
@@ -64,14 +71,14 @@ header img{
 #players{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    padding: 55px 190px;
+    margin: 5% 12%;
     align-items: center;
 }
 
 .player{
     box-shadow: 5px 0px 20px grey;
-    margin: 15px;
-    padding: 15px;
+    margin: 3%;
+    padding: 3%;
 }
 .player:hover{
     box-shadow: 5px 0px 20px black;
@@ -79,7 +86,7 @@ header img{
 
 
 .player-image{
-    width: 320px;
+    width: 100%;
 }
 
 /* .player:hover .player-image{
@@ -186,11 +193,10 @@ footer{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 483.87px;
-    height: 213px;
-    margin-left: 475px;
-    margin-top: 100px;
-    margin-bottom: 50px;
+    width: 35%;
+    margin-left: 30%;
+    margin-top: 10%;
+    margin-bottom: 5%;
 }
 
 footer img{
@@ -202,3 +208,47 @@ footer div .footer-icon{
     color: grey;
     margin: 5px 10px;
 }
+
+
+/*---------------------------------------*\
+    Media Query section(mobile devices)
+\*---------------------------------------*/
+
+@media only screen and (max-width: 480px) {
+    header{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #header-content{
+        width: 100%;
+    }
+    #header-content h1{
+        font-size: 3em;
+    }
+
+    header img{
+        padding-top: 10%;
+        width: 100%;
+    }
+    #players{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    #ranking-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .videos{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 5%;
+        margin-bottom: 2%;
+    }
+
+  }
