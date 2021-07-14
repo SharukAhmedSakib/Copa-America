@@ -83,17 +83,20 @@ header img{
 .player:hover{
     box-shadow: 5px 0px 20px black;
 }
-
+.player-image-div{
+    overflow: hidden;
+}
 
 .player-image{
     width: 100%;
 }
 
-/* .player:hover .player-image{
-    animation: zoom 1s ease-in 0s 1 forwards forwards;
+.player:hover .player-image{
+    transform: scale(1.3);
+    transition: transform 0.5s ease-in;
 }
 
-@keyframes zoom {
+/* @keyframes zoom {
     0%{}
     100%{width: 500px; overflow: hidden;}
 } */
