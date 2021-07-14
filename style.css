@@ -1,13 +1,17 @@
 
-/* imported font */
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+/*------------------------*\
+     Importent Font 
+\*------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 body{
     font-family: 'Poppins', sans-serif;
     margin: 0px;
 }
 
-/* header style */
+/*------------------------*\
+     Header style 
+\*------------------------*/
 header{
 display: flex;
 background-color: #2D25A0;
@@ -52,4 +56,45 @@ padding: 150px;
 
 header img{
     width: 556px;
+}
+
+/*------------------------*\
+     first section style 
+\*------------------------*/
+#players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 55px 190px;
+}
+
+.player{
+    box-shadow: 5px 0px 20px grey;
+    margin: 15px;
+    padding: 15px;
+}
+.player:hover{
+    box-shadow: 5px 0px 20px black;
+}
+
+
+.player-image{
+    width: 320px;
+}
+
+/* .player:hover .player-image{
+    animation: zoom 1s ease-in 0s 1 forwards forwards;
+}
+
+@keyframes zoom {
+    0%{}
+    100%{width: 500px; overflow: hidden;}
+} */
+
+.player-content p{
+    color: grey;
+}
+
+.player-content h1{
+    font-weight: bold;
+    font-size: 28px;
 }
